@@ -20,7 +20,7 @@ app.get('/success', (req, res, next) => {
 });
 
 app.get('/bad', (req, res, next) => {
-  next('We have an error!'); //! this will trigger an error with the next. so don't do it
+  next('We have an error!');
 });
 
 app.use('*', (req, res, next) => {
